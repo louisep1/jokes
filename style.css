@@ -87,6 +87,13 @@ img {
 
 
 /* Form */
+.hidden {
+  visibility: hidden;
+  height: 0;
+  /* visibility hidden, not display none as we need bots to see it */
+  /* height 0 means takes up no physical space */
+}
+
 .main form {
   width: 100%;
   border: 2px black solid;
