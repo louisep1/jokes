@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --hot-pink: rgb(255, 0, 76);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Spline Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* CHANGE ME */
+}
+
+img {
+  width: 100%;
+}
+
+/* ============================================================================================================== */
+
+/* Nav */
+.nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav .mini-container {
+  display: flex;
+  /* margin: 15px; */
+  margin: 15px 80px;
+  color: #000;
+  /* color: rgb(235, 123, 158); */
+  /* border: 3px black solid; */
+}
+
+.nav i {
+  color: #333;
+  margin: 2px 8px;
+  font-size: 2rem;
+}
+
+.nav h1 {
+  background-color: var(--hot-pink);
+  color: #fff;
+  /* padding: 5px 0; */
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 100px;
+  padding: 10px;
+  /* align-items: center; */
+}
+
+.nav li {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.title {
+  margin: 30px 50px;
+  text-align: center;
+}
+
+.title pre {
+  padding: 8px;
+}
+
+
+/* Form */
+.main form {
+  width: 100%;
+  border: 2px black solid;
+  justify-items: center;
+}
+
+.main form h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  padding: 30px;
+  text-align: center;
+}
+
+.main form .form-control {
+  padding: 15px 0;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 90%;
+  font-size: 12px;
+  border: 0;
+  border-bottom: 1px black solid;
+  padding: 5px;
+  margin: 0 20px;
+}
+
+form .btn {
+  margin: 20px;
+}
+
+
+
+
+.footer {
+  margin: 100px 50px 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* ================================================================================================== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 50px;
+  justify-items: center;
+}
+
+.lg {
+  font-size: 2rem;
+}
+
+.med {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+}
+
+.pd-0-50 {
+  padding: 0 50px;
+}
+
+.card {
+  margin: 20px 0;
+  padding: 15px;
+  border: 3px black solid;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* i stole this from traversy media - but not sure if necessary */
+}
+
+.btn {
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 14px;
+  background-color: var(--hot-pink);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 3px rgba(0, 0, 0, 0.5) solid;
+  background-color: pink;
+  padding-top: 8px;
+  width: 55%;
+  margin-left: 30px;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 760px) {
+  .nav {
+    display: block;
+  }
+
+  .nav ul {
+    justify-content: center;
+    background-color: rgba(255, 192, 203, 0.473);
+    margin: 20px auto;
+    padding: 5px;
+    width: 70%;
+  }
+
+  .nav a {
+    font-size: 14px;
+    color: rgb(53, 9, 9);
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    grid-row: 1;
+    margin-bottom: 50px;
+  }
+}
